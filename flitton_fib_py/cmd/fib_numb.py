@@ -1,15 +1,12 @@
-import sys
-from typing import Any
+import argparse
 
 from flitton_fib_py.fib_calcs.fib_number import recurring_fibonacci_number
 
 
 def fib_numb() -> None:
-    if len(sys.argv) <= 1:
-        raise EnvironmentError("You need to input a number to be calculated")
-    number: Any = sys.argv[-1]
-    try:
-        number: int = int(number)
-    except ValueError:
-        raise EnvironmentError("You need to input an integer")
-    print(f"Your Fibonacci number is: {recurring_fibonacci_number(number=number)}")
+    parser = argparse.ArgumentParser(description='Calculate Fibonacci numbers')
+    parser.add_argument('number', metavar='-n', type=int,
+                        help='the Fibonacci number to be calculated')
+    args = parser.parse_args()
+    print(f"Your Fibonacci number is: "
+          f"{recurring_fibonacci_number(number=args.number)}")
