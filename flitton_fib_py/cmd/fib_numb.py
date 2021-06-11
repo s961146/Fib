@@ -1,7 +1,7 @@
 import sys
 from typing import Any
 
-from ..fib_calcs.fib_number import recurring_fibonacci_number
+from flitton_fib_py.fib_calcs.fib_number import recurring_fibonacci_number
 
 
 def fib_numb() -> None:
