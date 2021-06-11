@@ -21,6 +21,11 @@ setup(
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
     ],
+    entry_points={
+        'console_scripts': [
+            'fib-number = flitton_fib_py.fib_calcs.fib_number:cursive_command',
+        ],
+    },
     python_requires='>=3',
     tests_require=['pytest'],
 )
