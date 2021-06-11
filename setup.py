@@ -23,7 +23,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'fib-number = flitton_fib_py.fib_calcs.fib_number:cursive_command',
+            'fib-number = flitton_fib_py.fib_calcs.fib_number:fib_numb',
         ],
     },
     python_requires='>=3',
