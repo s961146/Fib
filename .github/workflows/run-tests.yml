@@ -13,6 +13,6 @@ jobs:
           pip install -r requirements.txt
           export PYTHONPATH="./flitton_fib_py"
       - name: run tests
-        run: python -m unittest discover ./tests
+        run: python -m unittest discover
       - name: run type checking
         run: mypy flitton_fib_py
