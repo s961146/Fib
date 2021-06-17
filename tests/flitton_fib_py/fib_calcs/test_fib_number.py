@@ -12,8 +12,11 @@ class RecurringFibNumberTest(TestCase):
         )
 
     def test_negative(self):
+        with self.assertRaises(ValueError) as raised_error:
+            recurring_fibonacci_number(number=-1)
         self.assertEqual(
-            None, recurring_fibonacci_number(number=-1)
+            "Fibonacci has to be equal or above zero",
+            str(raised_error.exception)
         )
 
     def test_one(self):
