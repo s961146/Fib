@@ -15,8 +15,8 @@ with open(str(pathlib.Path(__file__).parent.absolute()) +
 setup(
     name="flitton_fib_py",
     version=version,
-    author="Maxwell Flitton",
-    author_email="maxwell@gmail.com",
+    author="Rado",
+    author_email="itsmebg@gmail.com",
     description="Calculates a Fibonacci number",
     long_description=long_description,
     long_description_content_type="text/markdown",
